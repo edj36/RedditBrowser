@@ -10,6 +10,13 @@ import UIKit
 
 class ListTableViewCell: UITableViewCell {
 
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var authorLabel: UILabel!
+    @IBOutlet weak var numComments: UILabel!
+    @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var thumbnail: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -17,7 +24,6 @@ class ListTableViewCell: UITableViewCell {
 
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
         // Configure the view for the selected state
     }
     
